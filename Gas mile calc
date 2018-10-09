@@ -1,0 +1,22 @@
+#Calculates how much it costs to drive per mile or kilometer
+
+question = raw_input("gallons or Liters")
+
+
+def non_metric(price, mpg):
+  if question == 'gallons':
+    price = raw_input('How much does gas cost per gallon?: ')
+    mpg = raw_input('How much mpg does your car have?: ')
+    total_cpg = float(price) / float(int(mpg))
+    print total_cpg
+      
+non_metric(price,mpg)
+
+def metric(price, kpl):
+  if question == 'Liters':
+    price = raw_input('How much does gas cost per liter?: ')
+    kpl = raw_input('How many kpl does your car have?: ')
+    total_cpl = float(price) / float(int(kpl))
+    print total_cpl
+         
+metric(price,kpl)
